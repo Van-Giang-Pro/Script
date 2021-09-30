@@ -11,7 +11,21 @@ report = dt << Graph Builder(
 	Elements( Smoother( X, Legend( 17 ) ), Points( X, Legend( 18 ) ) ),
 	SendToReport( Dispatch( {}, "graph title", TextEditBox, {Set Text( "" )} ) ),
 );
-report << Save Picture( "C:\My Drive\CoverGlassRobot_Alarm_Image File\CoverGlassRobotAlarm.png", PNG);
-Wait( 3 );
-Close All(Reports, Data Tables , NoSave);
-Quit();
+
+//report << Save Picture( "C:\My Drive\CoverGlassRobot_Alarm_Image File\CoverGlassRobotAlarm.png", PNG);
+//Wait( 3 );
+//Close All(Reports, Data Tables , NoSave);
+//Quit();
+
+/*
+Text Box( "Nguyen Van Giang", <<Font Color( "Red" ), <<Set Font Style( "Bold" ) );
+New Window( "Van Giang",
+	Text Box(
+		"Nguyen Van Giang",
+		<<Set Font Size( 10 ),
+		<<Font Color( "Red" ),
+		<<Set Font Style( "Bold" ),
+		<<Set Font Size( 100 )
+	)
+);
+*/
